@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadence 節拍 — 每天 5 分鐘，跟上 AI 的節拍</title>
+<meta name="description" content="繁體中文 AI 媒體。早上一份早報、晚上教你一招，看完就動手做。">
+<link rel="stylesheet" href="cadence.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-bars"><span></span><span></span><span></span></span>
+      <span class="logo-text">Cadence<small>節 拍</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="news.html">早報</a>
+      <a href="lab.html">AI 實驗室</a>
+      <a href="tools.html">工具庫</a>
+      <a href="weekly.html">週報</a>
+      <a href="web3.html">Web3</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-icon" onclick="toggleLang()">繁/EN</button>
+      <button class="btn-icon" onclick="toggleTheme()">◐</button>
+      <a href="subscribe.html" class="btn-primary small">免費訂閱</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">繁體中文 AI 媒體 · 每天早上 8 點</span>
+    <h1>每天 5 分鐘，<br>跟上 <span class="accent">AI 的節拍</span></h1>
+    <p class="hero-subtitle">早上一份早報、晚上教你一招、週日本週脈動。看完就動手做。免費訂閱、隨時可退。</p>
+    <form class="hero-form" onsubmit="return handleSubscribe(this)">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit" class="btn-primary">訂閱</button>
+    </form>
+    <p class="hero-social-proof">
+      <span class="dots"><span></span><span></span><span></span></span>
+      已有 2,847 位讀者一起跟上節拍
+    </p>
+  </div>
+</section>
+
+<main class="container">
+  <section>
+    <div class="section-header">
+      <div>
+        <p class="kicker">2026.05.14 · 週四 · 第 14 期</p>
+        <h2>今日早報</h2>
+      </div>
+      <a href="news.html" class="see-more">看完整列表 →</a>
+    </div>
+    <div class="grid-brief">
+      <a href="news-article.html" class="news-headline">
+        <div class="news-headline-visual">
+          <span class="glyph">GPT-6</span>
+        </div>
+        <div class="news-headline-body">
+          <span class="tag cat-headline">頭條</span>
+          <h3>蘋果 WWDC 預熱：iOS 19 將深度整合 GPT-6</h3>
+          <p>Tim Cook 在投資人會議上點名 OpenAI 為「主要合作夥伴」，預期 6 月 WWDC 公布 iPhone 系統層級 AI 助理介面。對台灣讀者意義重大——Siri 中文能力可能首次接近 ChatGPT 水準。</p>
+          <div class="news-meta">
+            <span>3 分鐘閱讀</span><span>·</span>
+            <span class="tag cat-llm">LLM</span><span>·</span>
+            <span class="source">The Information</span>
+          </div>
+        </div>
+      </a>
+      <div class="grid-news-list">
+        <a href="news-article.html" class="news-card-small">
+          <h4>Cursor 估值衝到 200 億美元，AI Coding 賽道全面起飛</h4>
+          <p class="summary">Anysphere 完成新一輪融資，估值較上一輪翻三倍。台灣工程師使用滲透率已超過 40%。</p>
+          <div class="news-meta"><span>2 分鐘</span> · <span class="tag cat-tool">工具</span> · <span class="source">TechCrunch</span></div>
+        </a>
+        <a href="news-article.html" class="news-card-small">
+          <h4>Sam Altman 暗示 GPT-6 Code 模式威脅初階程式員</h4>
+          <p class="summary">「GPT-6 Code Mode 是第一次讓我同情 junior devs」一句話引爆業界對初階工程職位的討論。</p>
+          <div class="news-meta"><span>2 分鐘</span> · <span class="tag cat-industry">產業</span> · <span class="source">X / @sama</span></div>
+        </a>
+        <a href="news-article.html" class="news-card-small">
+          <h4>台積電宣布 AI 晶片產能擴 50%，N2 製程提早量產</h4>
+          <p class="summary">資本支出上修至 480 億美元，N2 製程提早一季量產。台股設備供應鏈受惠。</p>
+          <div class="news-meta"><span>2 分鐘</span> · <span class="tag cat-hw">硬體</span> · <span class="source">TSMC IR</span></div>
+        </a>
+        <a href="news-article.html" class="news-card-small">
+          <h4>行政院通過「AI 創新基地」補助 50 億</h4>
+          <p class="summary">經濟部主導，鎖定生成式 AI、AI Agent、AI for Manufacturing 三大方向。單一新創最高補助 2000 萬。</p>
+          <div class="news-meta"><span>2 分鐘</span> · <span class="tag cat-local">在地</span> · <span class="source">經濟部</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <p class="kicker">週四 · 20:00 · AI 工具實作</p>
+        <h2>今晚教你一招</h2>
+      </div>
+      <a href="lab.html" class="see-more">來學新招 →</a>
+    </div>
+    <div class="lab-card">
+      <div class="lab-card-inner">
+        <span class="tag cat-viral">本週爆紅 · AI 玩法</span>
+        <h3 style="margin-top:12px;">用 Gemini 把自己做成漫畫風頭像</h3>
+        <p class="lab-intro">本週 X 上最紅的 AI 玩法，分享率比新聞高 10 倍。3 分鐘做出一張《灌籃高手》風的自己。我們幫你把 Prompt 寫好，點一下複製、再點一下開 Gemini，貼上去就行。</p>
+        <div class="prompt-card">
+          <div class="prompt-header">
+            <span class="prompt-label">PROMPT · 點一下複製</span>
+            <button class="copy-btn" onclick="copyPrompt(this, '#prompt-text-home')">複製</button>
+          </div>
+          <div class="prompt-text" id="prompt-text-home">將這張照片改成 1990 年代日本少年漫畫風格：黑白網點、誇張的線條對比、強烈動態速度線、主角五官保留清晰特徵、背景加入漫畫常見的爆炸狀效果線。整體質感要像剛從週刊少年 JUMP 撕下來的一頁。</div>
+        </div>
+        <div class="lab-actions">
+          <a href="https://gemini.google.com" target="_blank" rel="noopener" class="btn-primary">↗ 開啟 Gemini 動手</a>
+          <a href="lab-article.html" class="btn-secondary">看完整教學</a>
+          <button class="btn-secondary" onclick="toggleBookmark(this)">收藏這招</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <p class="kicker">回顧與展望</p>
+        <h2>本週與 Web3</h2>
+      </div>
+    </div>
+    <div class="grid-bottom">
+      <div class="pulse-card">
+        <h3>本週脈動 <span style="font-size:12px; color:var(--text-3); font-weight:400; letter-spacing:0.5px;">5/05 – 5/11</span></h3>
+        <div class="pulse-item"><span class="pulse-day">週一</span><span>Meta 開源 Llama 5，多模態能力首次追上 GPT</span></div>
+        <div class="pulse-item"><span class="pulse-day">週二</span><span>OpenAI 公布 GPT-6 預覽，推理速度提升 4 倍</span></div>
+        <div class="pulse-item"><span class="pulse-day">週三</span><span>Cursor 估值衝到 200 億美元</span></div>
+        <div class="pulse-item"><span class="pulse-day">週四</span><span>台積電宣布 AI 晶片產能擴 50%</span></div>
+        <div class="pulse-item"><span class="pulse-day">週五</span><span>歐盟 AI 倫理法案 v2 通過</span></div>
+        <div style="margin-top:16px; padding-top:12px; border-top:0.5px solid var(--border);">
+          <a href="weekly.html" class="see-more" style="font-size:13px; color:var(--accent);">看完整週報 →</a>
+        </div>
+      </div>
+      <div class="pulse-card">
+        <h3>Web3 專欄 <span class="tag cat-web3" style="margin-left:8px;">每週 2 篇</span></h3>
+        <div style="font-size:14px; font-weight:500; padding:12px 0; border-bottom: 0.5px dashed var(--border);">
+          <a href="web3.html">ether.fi 卡用戶破百萬，加密支付在台普及度追上</a>
+          <p style="font-size:12px; color:var(--text-2); margin-top:4px; font-weight:400;">DeFi 流動性質押協議用戶破百萬，台灣使用者突破 1 萬</p>
+        </div>
+        <div style="font-size:14px; font-weight:500; padding:12px 0;">
+          <a href="web3.html">AI Agent + 鏈上身份：DeFi 自動操作元年</a>
+          <p style="font-size:12px; color:var(--text-2); margin-top:4px; font-weight:400;">當 AI 開始管你的鏈上錢包，這個交集會改變所有人玩 DeFi 的方式</p>
+        </div>
+        <div style="margin-top:14px; padding-top:12px; border-top:0.5px solid var(--border); font-size:13px; color:var(--text-2);">
+          沒接觸過 Web3？<a href="web3.html" style="color:var(--accent);">看一篇就懂 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div>
+        <p class="kicker">編輯精選</p>
+        <h2>本週推薦工具</h2>
+      </div>
+      <a href="tools.html" class="see-more">逛工具庫 →</a>
+    </div>
+    <div class="featured-tools-row">
+      <a href="tools.html" class="featured-tool"><div class="icon">G</div><p class="name">Gemini</p><p class="label">圖像生成 · 免費</p></a>
+      <a href="tools.html" class="featured-tool"><div class="icon">C</div><p class="name">Claude</p><p class="label">寫作 · 推理</p></a>
+      <a href="tools.html" class="featured-tool"><div class="icon">P</div><p class="name">Perplexity</p><p class="label">研究 · 搜尋</p></a>
+      <a href="tools.html" class="featured-tool"><div class="icon">⌃</div><p class="name">Cursor</p><p class="label">AI Coding</p></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2>明天早上 8 點，繼續跟上節拍</h2>
+        <p>免費訂閱，每天 5 分鐘看完，看完就能動手做。</p>
+        <form class="hero-form" onsubmit="return handleSubscribe(this)">
+          <input type="email" name="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn-primary">訂閱</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom: 12px;">
+        <span class="logo-bars"><span></span><span></span><span></span></span>
+        <span class="logo-text">Cadence<small>節 拍</small></span>
+      </div>
+      <p class="brand-text">繁體中文 AI 媒體。<br>看完就動手做的每日內容平台。<br>Made with rhythm in Taipei.</p>
+    </div>
+    <div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div>
+    <div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡編輯部</a><a href="mailto:biz@cadence.tw">商業合作</a></div>
+    <div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">Instagram</a><a href="#">RSS</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源 · 著作權歸原媒體所有</div>
+</footer>
+<script src="cadence.js"></script>
+</body>
+</html>
