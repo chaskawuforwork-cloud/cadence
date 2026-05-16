@@ -1,1 +1,154 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>一招教學 · Cadence 節拍</title><link rel="stylesheet" href="cadence.css"><link rel="icon" type="image/svg+xml" href="favicon.svg"></head><body><nav class="site-nav"><div class="nav-inner"><a href="index.html" class="logo"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></a><div class="nav-links"><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="tools.html">工具庫</a><a href="weekly.html">週報</a><a href="web3.html">Web3</a></div><div class="nav-actions"><button class="btn-icon" onclick="toggleLang()">繁/EN</button><button class="btn-icon" onclick="toggleTheme()">◐</button><a href="subscribe.html" class="btn-primary small">免費訂閱</a></div></div></nav><main class="container-narrow"><section class="hero"><div class="hero-inner"><span class="hero-eyebrow">Cadence · 即將推出</span><h1>一招教學</h1><p class="hero-subtitle">完整教學含 Prompt 卡片。完整版正在準備中。</p><div style="margin-top:24px;"><a href="index.html" class="btn-primary">回首頁</a><a href="subscribe.html" class="btn-secondary" style="margin-left:8px;">訂閱以收到更新</a></div></div></section></main><footer><div class="footer-inner"><div class="footer-col"><div class="logo" style="margin-bottom: 12px;"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></div><p class="brand-text">繁體中文 AI 媒體。看完就動手做的每日內容平台。Made with rhythm in Taipei.</p></div><div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div><div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡編輯部</a></div><div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">RSS</a></div></div><div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源</div></footer><script src="cadence.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用 Gemini 把自己做成漫畫風頭像 · AI 實驗室 · Cadence</title>
+<link rel="stylesheet" href="cadence.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-bars"><span></span><span></span><span></span></span>
+      <span class="logo-text">Cadence<small>節 拍</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="news.html">早報</a>
+      <a href="lab.html" class="active">AI 實驗室</a>
+      <a href="tools.html">工具庫</a>
+      <a href="weekly.html">週報</a>
+      <a href="web3.html">Web3</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-icon" onclick="toggleLang()">繁/EN</button>
+      <button class="btn-icon" onclick="toggleTheme()">◐</button>
+      <a href="subscribe.html" class="btn-primary small">免費訂閱</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container-narrow">
+
+  <article>
+    <div class="article-hero">
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom: 4px;">
+        <span class="tag cat-viral">本週爆紅</span>
+        <span class="tag cat-llm">AI 玩法</span>
+        <span class="tag cat-local">新手</span>
+      </div>
+      <h1>用 Gemini 把自己做成漫畫風頭像</h1>
+      <div class="article-meta">
+        <span>2026.05.12 · 週二</span>
+        <span class="dot">·</span>
+        <span>Cadence 編輯部</span>
+        <span class="dot">·</span>
+        <span>3 分鐘看完 · 3 分鐘動手</span>
+      </div>
+    </div>
+
+    <div class="news-headline-visual cat-web3" style="aspect-ratio: 16/9; border-radius: var(--radius-lg); margin-bottom: 40px;">
+      <span class="glyph" style="font-size: 96px;">漫畫</span>
+    </div>
+
+    <div class="article-body">
+      <p><strong>為什麼今天教這招</strong>：本週 X 上最紅的 AI 玩法，分享率比新聞高 10 倍。3 分鐘做出一張《灌籃高手》風的自己，當大頭照、當朋友圈分享都很吃。</p>
+
+      <h2>3 個步驟</h2>
+      <ol>
+        <li>開 <a href="https://gemini.google.com" target="_blank">gemini.google.com</a> 登入 Google 帳號</li>
+        <li>上傳一張你的清晰正臉照（光線越好成品越好）</li>
+        <li>貼上下方 Prompt，按下送出，等 5–10 秒</li>
+      </ol>
+
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <span class="prompt-label">PROMPT · 點一下複製</span>
+          <button class="copy-btn" onclick="copyPrompt(this, '#prompt-text')">複製</button>
+        </div>
+        <div class="prompt-text" id="prompt-text">將這張照片改成 1990 年代日本少年漫畫風格：黑白網點、誇張的線條對比、強烈動態速度線、主角五官保留清晰特徵、背景加入漫畫常見的爆炸狀效果線。整體質感要像剛從週刊少年 JUMP 撕下來的一頁。</div>
+      </div>
+
+      <div class="lab-actions" style="margin: 16px 0 40px;">
+        <a href="https://gemini.google.com" target="_blank" class="btn-primary">↗ 開啟 Gemini 動手</a>
+        <button class="btn-secondary" onclick="toggleBookmark(this)">收藏這招</button>
+      </div>
+
+      <h2>失敗時怎麼辦</h2>
+      <p>如果生出來太像油畫不像漫畫，在 prompt 結尾加一句「<strong>不要寫實風格，要明確的網點與線稿</strong>」。如果五官不像，加「<strong>忠實保留原照片臉部比例與表情</strong>」。如果背景太亂，加「<strong>背景簡化，主角突出</strong>」。</p>
+
+      <h2>進階變化</h2>
+      <p>把「1990 年代日本少年漫畫」換成「90 年代少女漫畫」「美式英雄漫畫」「香港九龍城寨風格水墨漫畫」「Studio Ghibli 動畫」「賽博朋克漫畫」，每一種風格都會給你完全不同的視覺。</p>
+      <p>除了人像，上傳寵物或物品照片也能變漫畫風——你家的貓變成漫畫貓主角會很有戲。</p>
+      <p>進階玩法：用 ChatGPT 的 DALL-E 或 Midjourney 跑同一份 prompt，對照三個工具的風格差異，學會「哪個工具適合哪種風格」的判斷力。</p>
+
+      <h2>注意事項</h2>
+      <p>Gemini 生成的圖片有看不見的 SynthID 浮水印（為了標示 AI 生成），不影響觀看與分享。商用時請注意 Google 的使用條款。上傳含他人臉部的照片前請取得對方同意。</p>
+    </div>
+  </article>
+
+  <section style="margin-top: 64px; padding-top: 40px; border-top: 0.5px solid var(--border);">
+    <h3 style="font-size:18px; font-weight:500; margin-bottom:20px;">相關工具</h3>
+    <div class="tools-grid">
+      <a href="tools.html" class="tool-card">
+        <div style="width:36px; height:36px; border-radius:8px; background:var(--cat-llm-bg); color:var(--cat-llm-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); margin-bottom: 10px;">G</div>
+        <h3>Gemini</h3>
+        <p>本招主用工具，免費版即可</p>
+        <div class="news-meta"><span class="tag cat-llm">通用 LLM</span></div>
+      </a>
+      <a href="tools.html" class="tool-card">
+        <div style="width:36px; height:36px; border-radius:8px; background:var(--cat-tool-bg); color:var(--cat-tool-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); margin-bottom: 10px;">D</div>
+        <h3>ChatGPT (DALL-E)</h3>
+        <p>替代方案，付費版圖像品質高</p>
+        <div class="news-meta"><span class="tag cat-tool">圖像</span></div>
+      </a>
+      <a href="tools.html" class="tool-card">
+        <div style="width:36px; height:36px; border-radius:8px; background:var(--cat-viral-bg); color:var(--cat-viral-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); margin-bottom: 10px;">M</div>
+        <h3>Midjourney</h3>
+        <p>頂級圖像質感，學習門檻較高</p>
+        <div class="news-meta"><span class="tag cat-viral">圖像</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section style="margin-top: 48px;">
+    <h3 style="font-size:18px; font-weight:500; margin-bottom:16px;">下一招</h3>
+    <a href="lab-article.html" class="card" style="display:block;">
+      <span class="tag cat-tool" style="margin-bottom:10px;">明天 · 週三</span>
+      <h3 style="font-size:20px; font-weight:500; margin-bottom:6px;">用 Claude 30 秒寫完週報</h3>
+      <p style="font-size:14px; color:var(--text-2);">上班族每週四五要寫週報，這招省下 30 分鐘。</p>
+    </a>
+  </section>
+
+  <section>
+    <div class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2>明晚 8 點，新招到信箱</h2>
+        <p>每晚一招、看完就動手做。免費訂閱，隨時可退。</p>
+        <form class="hero-form" onsubmit="return handleSubscribe(this)">
+          <input type="email" name="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn-primary">訂閱</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom: 12px;"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></div>
+      <p class="brand-text">繁體中文 AI 媒體。看完就動手做的每日內容平台。</p>
+    </div>
+    <div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div>
+    <div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡</a></div>
+    <div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">RSS</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源</div>
+</footer>
+<script src="cadence.js"></script>
+</body>
+</html>
