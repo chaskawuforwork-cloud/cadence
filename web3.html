@@ -1,1 +1,148 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Web3 專欄 · Cadence 節拍</title><link rel="stylesheet" href="cadence.css"><link rel="icon" type="image/svg+xml" href="favicon.svg"></head><body><nav class="site-nav"><div class="nav-inner"><a href="index.html" class="logo"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></a><div class="nav-links"><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="tools.html">工具庫</a><a href="weekly.html">週報</a><a href="web3.html">Web3</a></div><div class="nav-actions"><button class="btn-icon" onclick="toggleLang()">繁/EN</button><button class="btn-icon" onclick="toggleTheme()">◐</button><a href="subscribe.html" class="btn-primary small">免費訂閱</a></div></div></nav><main class="container-narrow"><section class="hero"><div class="hero-inner"><span class="hero-eyebrow">Cadence · 即將推出</span><h1>Web3 專欄</h1><p class="hero-subtitle">當 AI 跟 Web3 開始交會。完整版正在準備中。</p><div style="margin-top:24px;"><a href="index.html" class="btn-primary">回首頁</a><a href="subscribe.html" class="btn-secondary" style="margin-left:8px;">訂閱以收到更新</a></div></div></section></main><footer><div class="footer-inner"><div class="footer-col"><div class="logo" style="margin-bottom: 12px;"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></div><p class="brand-text">繁體中文 AI 媒體。看完就動手做的每日內容平台。Made with rhythm in Taipei.</p></div><div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div><div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡編輯部</a></div><div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">RSS</a></div></div><div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源</div></footer><script src="cadence.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>訂閱 Cadence 節拍</title>
+<link rel="stylesheet" href="cadence.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-bars"><span></span><span></span><span></span></span>
+      <span class="logo-text">Cadence<small>節 拍</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="news.html">早報</a>
+      <a href="lab.html">AI 實驗室</a>
+      <a href="tools.html">工具庫</a>
+      <a href="weekly.html">週報</a>
+      <a href="web3.html">Web3</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-icon" onclick="toggleLang()">繁/EN</button>
+      <button class="btn-icon" onclick="toggleTheme()">◐</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">免費 · 隨時可退</span>
+    <h1>每天 5 分鐘，<br>跟上 <span class="accent">AI 的節拍</span></h1>
+    <p class="hero-subtitle">早上一份早報、晚上教你一招、週日本週脈動。免費訂閱，每封信底部都有一鍵退訂連結。</p>
+    <form class="hero-form" onsubmit="return handleSubscribe(this)">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit" class="btn-primary">免費訂閱</button>
+    </form>
+    <p class="hero-social-proof">
+      <span class="dots"><span></span><span></span><span></span></span>
+      已有 2,847 位讀者一起跟上節拍
+    </p>
+  </div>
+</section>
+
+<main class="container">
+
+  <section>
+    <div class="section-header"><div><p class="kicker">訂閱後你會收到</p><h2>每天會出現在你信箱的東西</h2></div></div>
+    <div class="grid-2">
+      <div class="card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-llm-bg); color:var(--cat-llm-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">早</div>
+        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">每日早報（週一到週六）</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每天早上 8 點寄達。5 則 AI 與 Web3 新聞，每則 30 秒讀完，附原文連結。重點是「對台灣讀者意義」，不是翻譯機器人。</p>
+      </div>
+      <div class="card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-industry-bg); color:var(--cat-industry-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">招</div>
+        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">每晚一招（週一一詞）</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每晚 8 點。一個 AI 玩法或 Web3 應用，含現成 Prompt。看完 3 分鐘、動手 3 分鐘，立刻有產出。</p>
+      </div>
+      <div class="card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-tool-bg); color:var(--cat-tool-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">週</div>
+        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">週日本週脈動</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每週日早上。本週 5 件大事的精煉版，加下週值得追蹤的兩件事。一週看一次也跟得上節奏。</p>
+      </div>
+      <div class="card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-web3-bg); color:var(--cat-web3-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">Pro</div>
+        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">訂閱戶獨享</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每月一份深度產業報告、優先試用新功能、加入訂閱戶限定 Discord 社群、零廣告。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><div><p class="kicker">訂閱方案</p><h2>免費永遠夠用</h2></div></div>
+    <div class="grid-2">
+      <div class="card" style="position: relative;">
+        <span class="tag cat-tool" style="margin-bottom:14px;">最熱門</span>
+        <h3 style="font-size:22px; font-weight:500; margin-bottom:6px;">免費</h3>
+        <p style="font-size:32px; font-weight:500; margin-bottom:20px; letter-spacing:-0.5px;">NT$ 0<span style="font-size:14px; color:var(--text-2); font-weight:400;"> / 永久</span></p>
+        <ul style="font-size:14px; color:var(--text-2); line-height:2.2; list-style:none; padding:0; margin-bottom:24px;">
+          <li>✓ 每日早報</li>
+          <li>✓ 每晚一招</li>
+          <li>✓ 週日週報</li>
+          <li>✓ 全站文章閱讀</li>
+          <li>✗ 每月深度報告</li>
+          <li>✗ 訂閱戶 Discord</li>
+        </ul>
+        <a href="#" class="btn-secondary" style="width:100%; justify-content:center;">免費訂閱</a>
+      </div>
+      <div class="card featured" style="position: relative;">
+        <span class="tag cat-headline" style="margin-bottom:14px;">推薦</span>
+        <h3 style="font-size:22px; font-weight:500; margin-bottom:6px;">Cadence Pro</h3>
+        <p style="font-size:32px; font-weight:500; margin-bottom:20px; letter-spacing:-0.5px;">NT$ 200<span style="font-size:14px; color:var(--text-2); font-weight:400;"> / 月</span></p>
+        <ul style="font-size:14px; color:var(--text-2); line-height:2.2; list-style:none; padding:0; margin-bottom:24px;">
+          <li>✓ 免費版所有內容</li>
+          <li>✓ 每月深度產業報告</li>
+          <li>✓ 訂閱戶限定 Discord</li>
+          <li>✓ 新功能優先試用</li>
+          <li>✓ 廣告插入 0 則</li>
+          <li>✓ 編輯部直接回信</li>
+        </ul>
+        <a href="#" class="btn-primary" style="width:100%; justify-content:center;">升級 Pro</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><div><p class="kicker">FAQ</p><h2>常見問題</h2></div></div>
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div class="card">
+        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">為什麼免費？怎麼賺錢？</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">免費版有少量 Newsletter 廣告（每月 4-6 則，跟 AI / Web3 相關才合作）；Pro 版完全沒廣告。長期我們也會推產業深度報告與線下活動。</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">可以隨時取消嗎？</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每封信底部都有一鍵退訂連結，不會問你為什麼，不會挽留，不會把你的 Email 賣給其他媒體。</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">會用 AI 生成內容嗎？</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">AI 只用於輔助篩選與初稿，所有發布內容都由真人編輯確認、加上台灣角度與觀點。我們不發 AI 純自動生成的稿。</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">內容會抄襲嗎？</h3>
+        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">所有引用都嚴格控制在 30% 原文重疊度以下，每則新聞都標明來源 + 原文連結。我們是策展者跟翻譯者，不是抄襲者。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom: 12px;"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></div>
+      <p class="brand-text">繁體中文 AI 媒體。看完就動手做的每日內容平台。</p>
+    </div>
+    <div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div>
+    <div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡</a></div>
+    <div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">RSS</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源</div>
+</footer>
+<script src="cadence.js"></script>
+</body>
+</html>
