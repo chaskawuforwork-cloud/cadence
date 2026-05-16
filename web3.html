@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>訂閱 Cadence 節拍</title>
+<title>Web3 專欄 · Cadence 節拍</title>
 <link rel="stylesheet" href="cadence.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
@@ -20,112 +20,87 @@
       <a href="lab.html">AI 實驗室</a>
       <a href="tools.html">工具庫</a>
       <a href="weekly.html">週報</a>
-      <a href="web3.html">Web3</a>
+      <a href="web3.html" class="active">Web3</a>
     </div>
     <div class="nav-actions">
       <button class="btn-icon" onclick="toggleLang()">繁/EN</button>
       <button class="btn-icon" onclick="toggleTheme()">◐</button>
+      <a href="subscribe.html" class="btn-primary small">免費訂閱</a>
     </div>
   </div>
 </nav>
 
-<section class="hero">
+<section class="hero" style="padding-bottom: 32px;">
   <div class="hero-inner">
-    <span class="hero-eyebrow">免費 · 隨時可退</span>
-    <h1>每天 5 分鐘，<br>跟上 <span class="accent">AI 的節拍</span></h1>
-    <p class="hero-subtitle">早上一份早報、晚上教你一招、週日本週脈動。免費訂閱，每封信底部都有一鍵退訂連結。</p>
-    <form class="hero-form" onsubmit="return handleSubscribe(this)">
-      <input type="email" name="email" placeholder="your@email.com" required>
-      <button type="submit" class="btn-primary">免費訂閱</button>
-    </form>
-    <p class="hero-social-proof">
-      <span class="dots"><span></span><span></span><span></span></span>
-      已有 2,847 位讀者一起跟上節拍
-    </p>
+    <span class="hero-eyebrow" style="background:var(--cat-web3-bg); color:var(--cat-web3-text);">Web3 專欄 · 每週五、六</span>
+    <h1 style="font-size: 44px;">當 AI 跟 Web3 開始交會</h1>
+    <p class="hero-subtitle">每週五、週六各一篇 Web3 內容，從新手入門到 AI Agent 結合鏈上身份的進階應用。沒接觸過？從下面那篇開始看。</p>
   </div>
 </section>
 
 <main class="container">
 
-  <section>
-    <div class="section-header"><div><p class="kicker">訂閱後你會收到</p><h2>每天會出現在你信箱的東西</h2></div></div>
-    <div class="grid-2">
-      <div class="card">
-        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-llm-bg); color:var(--cat-llm-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">早</div>
-        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">每日早報（週一到週六）</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每天早上 8 點寄達。5 則 AI 與 Web3 新聞，每則 30 秒讀完，附原文連結。重點是「對台灣讀者意義」，不是翻譯機器人。</p>
+  <section style="padding-top: 16px;">
+    <a href="lab-article.html" class="news-headline">
+      <div class="news-headline-visual cat-web3" style="aspect-ratio: 24/9;">
+        <span class="glyph">Web3 101</span>
       </div>
-      <div class="card">
-        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-industry-bg); color:var(--cat-industry-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">招</div>
-        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">每晚一招（週一一詞）</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每晚 8 點。一個 AI 玩法或 Web3 應用，含現成 Prompt。看完 3 分鐘、動手 3 分鐘，立刻有產出。</p>
+      <div class="news-headline-body" style="padding: 32px 40px;">
+        <span class="tag cat-web3">新手必讀</span>
+        <h3 style="font-size: 30px;">Web3 一篇就懂：從錢包到加密支付的最短路徑</h3>
+        <p style="font-size: 16px;">15 分鐘讀完，你會懂錢包、穩定幣、DeFi、加密支付這四個概念，知道為什麼這些東西跟你日常有關，以及第一步該從哪裡開始。</p>
+        <div style="margin-top:8px;"><span class="btn-primary small">開始閱讀 →</span></div>
       </div>
-      <div class="card">
-        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-tool-bg); color:var(--cat-tool-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">週</div>
-        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">週日本週脈動</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每週日早上。本週 5 件大事的精煉版，加下週值得追蹤的兩件事。一週看一次也跟得上節奏。</p>
-      </div>
-      <div class="card">
-        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-web3-bg); color:var(--cat-web3-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-size:20px; margin-bottom: 14px;">Pro</div>
-        <h3 style="font-size:18px; font-weight:500; margin-bottom:8px;">訂閱戶獨享</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每月一份深度產業報告、優先試用新功能、加入訂閱戶限定 Discord 社群、零廣告。</p>
-      </div>
-    </div>
+    </a>
   </section>
 
   <section>
-    <div class="section-header"><div><p class="kicker">訂閱方案</p><h2>免費永遠夠用</h2></div></div>
-    <div class="grid-2">
-      <div class="card" style="position: relative;">
-        <span class="tag cat-tool" style="margin-bottom:14px;">最熱門</span>
-        <h3 style="font-size:22px; font-weight:500; margin-bottom:6px;">免費</h3>
-        <p style="font-size:32px; font-weight:500; margin-bottom:20px; letter-spacing:-0.5px;">NT$ 0<span style="font-size:14px; color:var(--text-2); font-weight:400;"> / 永久</span></p>
-        <ul style="font-size:14px; color:var(--text-2); line-height:2.2; list-style:none; padding:0; margin-bottom:24px;">
-          <li>✓ 每日早報</li>
-          <li>✓ 每晚一招</li>
-          <li>✓ 週日週報</li>
-          <li>✓ 全站文章閱讀</li>
-          <li>✗ 每月深度報告</li>
-          <li>✗ 訂閱戶 Discord</li>
-        </ul>
-        <a href="#" class="btn-secondary" style="width:100%; justify-content:center;">免費訂閱</a>
-      </div>
-      <div class="card featured" style="position: relative;">
-        <span class="tag cat-headline" style="margin-bottom:14px;">推薦</span>
-        <h3 style="font-size:22px; font-weight:500; margin-bottom:6px;">Cadence Pro</h3>
-        <p style="font-size:32px; font-weight:500; margin-bottom:20px; letter-spacing:-0.5px;">NT$ 200<span style="font-size:14px; color:var(--text-2); font-weight:400;"> / 月</span></p>
-        <ul style="font-size:14px; color:var(--text-2); line-height:2.2; list-style:none; padding:0; margin-bottom:24px;">
-          <li>✓ 免費版所有內容</li>
-          <li>✓ 每月深度產業報告</li>
-          <li>✓ 訂閱戶限定 Discord</li>
-          <li>✓ 新功能優先試用</li>
-          <li>✓ 廣告插入 0 則</li>
-          <li>✓ 編輯部直接回信</li>
-        </ul>
-        <a href="#" class="btn-primary" style="width:100%; justify-content:center;">升級 Pro</a>
-      </div>
+    <div class="section-header"><div><p class="kicker">最新 Web3 內容</p><h2>正在發生的事</h2></div><a href="#" class="see-more">時間排序 ↓</a></div>
+    <div class="tools-grid">
+      <a href="news-article.html" class="tool-card">
+        <span class="tag cat-web3" style="margin-bottom:10px;">新聞</span>
+        <h3>ether.fi 卡用戶破百萬</h3>
+        <p>DeFi 流動性質押協議用戶破百萬，台灣使用者突破 1 萬。</p>
+        <div class="news-meta"><span>3 分鐘</span> · <span>2026.05.15</span></div>
+      </a>
+      <a href="news-article.html" class="tool-card">
+        <span class="tag cat-web3" style="margin-bottom:10px;">深度</span>
+        <h3>AI Agent + 鏈上身份：DeFi 自動操作元年</h3>
+        <p>當 AI 開始管你的鏈上錢包，這個交集會改變所有人玩 DeFi 的方式。</p>
+        <div class="news-meta"><span>8 分鐘</span> · <span>2026.05.10</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-web3" style="margin-bottom:10px;">一招</span>
+        <h3>30 分鐘開好你的第一個加密錢包</h3>
+        <p>Phantom 錢包新手入門，含助記詞安全須知。</p>
+        <div class="news-meta"><span>10 分鐘</span> · <span>新手</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-web3" style="margin-bottom:10px;">一招</span>
+        <h3>用 ether.fi 卡在 7-11 結帳</h3>
+        <p>加密支付實測，刷起來跟悠遊卡一樣。</p>
+        <div class="news-meta"><span>8 分鐘</span> · <span>新手</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-local" style="margin-bottom:10px;">一詞</span>
+        <h3>穩定幣 Stablecoin 是什麼</h3>
+        <p>3 句話講完，立刻看懂加密支付背後的錢。</p>
+        <div class="news-meta"><span>5 分鐘</span> · <span>新手</span></div>
+      </a>
+      <a href="news-article.html" class="tool-card">
+        <span class="tag cat-policy" style="margin-bottom:10px;">政策</span>
+        <h3>金管會研擬虛擬資產法草案</h3>
+        <p>預期 Q3 送立法院。台灣 Web3 圈分水嶺：合規門檻拉高，長期更接近主流金融。</p>
+        <div class="news-meta"><span>4 分鐘</span> · <span>2026.05.15</span></div>
+      </a>
     </div>
   </section>
 
-  <section>
-    <div class="section-header"><div><p class="kicker">FAQ</p><h2>常見問題</h2></div></div>
-    <div style="display:flex; flex-direction:column; gap:14px;">
-      <div class="card">
-        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">為什麼免費？怎麼賺錢？</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">免費版有少量 Newsletter 廣告（每月 4-6 則，跟 AI / Web3 相關才合作）；Pro 版完全沒廣告。長期我們也會推產業深度報告與線下活動。</p>
-      </div>
-      <div class="card">
-        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">可以隨時取消嗎？</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">每封信底部都有一鍵退訂連結，不會問你為什麼，不會挽留，不會把你的 Email 賣給其他媒體。</p>
-      </div>
-      <div class="card">
-        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">會用 AI 生成內容嗎？</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">AI 只用於輔助篩選與初稿，所有發布內容都由真人編輯確認、加上台灣角度與觀點。我們不發 AI 純自動生成的稿。</p>
-      </div>
-      <div class="card">
-        <h3 style="font-size:16px; font-weight:500; margin-bottom:8px;">內容會抄襲嗎？</h3>
-        <p style="font-size:14px; color:var(--text-2); line-height:1.7;">所有引用都嚴格控制在 30% 原文重疊度以下，每則新聞都標明來源 + 原文連結。我們是策展者跟翻譯者，不是抄襲者。</p>
-      </div>
+  <section style="margin-top: 32px;">
+    <div style="background:var(--cat-web3-bg); color:var(--cat-web3-text); border-radius:var(--radius-xl); padding:48px 40px; text-align:center;">
+      <h2 style="font-size:28px; font-weight:500; margin-bottom:12px;">每週五、六 Web3 專欄寄到信箱</h2>
+      <p style="font-size:15px; opacity:0.85; margin-bottom:24px;">訂閱 Cadence，AI + Web3 兩條軸線同步跟上。</p>
+      <a href="subscribe.html" class="btn-dark" style="background:var(--cat-web3-text); color:var(--cat-web3-bg); padding:14px 28px;">訂閱 Newsletter</a>
     </div>
   </section>
 
