@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web3 專欄 · Cadence 節拍</title>
+<title>AI 實驗室 · Cadence 節拍</title>
 <link rel="stylesheet" href="cadence.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
@@ -17,10 +17,10 @@
     </a>
     <div class="nav-links">
       <a href="news.html">早報</a>
-      <a href="lab.html">AI 實驗室</a>
+      <a href="lab.html" class="active">AI 實驗室</a>
       <a href="tools.html">工具庫</a>
       <a href="weekly.html">週報</a>
-      <a href="web3.html" class="active">Web3</a>
+      <a href="web3.html">Web3</a>
     </div>
     <div class="nav-actions">
       <button class="btn-icon" onclick="toggleLang()">繁/EN</button>
@@ -32,75 +32,110 @@
 
 <section class="hero" style="padding-bottom: 32px;">
   <div class="hero-inner">
-    <span class="hero-eyebrow" style="background:var(--cat-web3-bg); color:var(--cat-web3-text);">Web3 專欄 · 每週五、六</span>
-    <h1 style="font-size: 44px;">當 AI 跟 Web3 開始交會</h1>
-    <p class="hero-subtitle">每週五、週六各一篇 Web3 內容，從新手入門到 AI Agent 結合鏈上身份的進階應用。沒接觸過？從下面那篇開始看。</p>
+    <span class="hero-eyebrow">每晚 20:00 · 看完就動手做</span>
+    <h1 style="font-size: 44px;">AI 實驗室</h1>
+    <p class="hero-subtitle">週一一詞、週二到週日一招。我們幫你把 Prompt 寫好，點一下複製、再點一下開工具，立刻動手。</p>
   </div>
 </section>
 
 <main class="container">
 
-  <section style="padding-top: 16px;">
-    <a href="lab-article.html" class="news-headline">
-      <div class="news-headline-visual cat-web3" style="aspect-ratio: 24/9;">
-        <span class="glyph">Web3 101</span>
-      </div>
-      <div class="news-headline-body" style="padding: 32px 40px;">
-        <span class="tag cat-web3">新手必讀</span>
-        <h3 style="font-size: 30px;">Web3 一篇就懂：從錢包到加密支付的最短路徑</h3>
-        <p style="font-size: 16px;">15 分鐘讀完，你會懂錢包、穩定幣、DeFi、加密支付這四個概念，知道為什麼這些東西跟你日常有關，以及第一步該從哪裡開始。</p>
-        <div style="margin-top:8px;"><span class="btn-primary small">開始閱讀 →</span></div>
-      </div>
-    </a>
+  <section style="padding-top: 24px;">
+    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:32px; justify-content:center;">
+      <button class="btn-secondary small" style="border-color: var(--accent); color: var(--accent);">全部</button>
+      <button class="btn-secondary small">AI 工具</button>
+      <button class="btn-secondary small">AI 玩法</button>
+      <button class="btn-secondary small">生產力</button>
+      <button class="btn-secondary small">Web3</button>
+      <button class="btn-secondary small">金融術語</button>
+      <button class="btn-secondary small">新手入門</button>
+    </div>
   </section>
 
   <section>
-    <div class="section-header"><div><p class="kicker">最新 Web3 內容</p><h2>正在發生的事</h2></div><a href="#" class="see-more">時間排序 ↓</a></div>
-    <div class="tools-grid">
-      <a href="news-article.html" class="tool-card">
-        <span class="tag cat-web3" style="margin-bottom:10px;">新聞</span>
-        <h3>ether.fi 卡用戶破百萬</h3>
-        <p>DeFi 流動性質押協議用戶破百萬，台灣使用者突破 1 萬。加密支付在台普及度追上。</p>
-        <div class="news-meta"><span>3 分鐘</span> · <span>2026.05.15</span></div>
+    <div class="section-header"><div><p class="kicker">本週新招</p><h2>這週教的</h2></div></div>
+    <div class="grid-2">
+      <a href="lab-article.html" class="news-headline">
+        <div class="news-headline-visual cat-web3" style="aspect-ratio: 21/9;"><span class="glyph">漫畫</span></div>
+        <div class="news-headline-body">
+          <div style="display:flex; gap:8px; margin-bottom:10px;">
+            <span class="tag cat-viral">本週爆紅</span>
+            <span class="tag cat-llm">AI 玩法</span>
+          </div>
+          <h3>用 Gemini 把自己做成漫畫風頭像</h3>
+          <p>本週 X 上最紅的 AI 玩法，3 分鐘做出一張《灌籃高手》風的自己。</p>
+          <div class="news-meta"><span>2026.05.12 · 週二</span> · <span>3 分鐘看完</span> · <span class="tag cat-local">新手</span></div>
+        </div>
       </a>
-      <a href="news-article.html" class="tool-card">
-        <span class="tag cat-web3" style="margin-bottom:10px;">深度</span>
-        <h3>AI Agent + 鏈上身份：DeFi 自動操作元年</h3>
-        <p>當 AI 開始管你的鏈上錢包，這個交集會改變所有人玩 DeFi 的方式。</p>
-        <div class="news-meta"><span>8 分鐘</span> · <span>2026.05.10</span></div>
-      </a>
-      <a href="lab-article.html" class="tool-card">
-        <span class="tag cat-web3" style="margin-bottom:10px;">一招</span>
-        <h3>30 分鐘開好你的第一個加密錢包</h3>
-        <p>Phantom 錢包新手入門，含助記詞安全須知。</p>
-        <div class="news-meta"><span>10 分鐘</span> · <span>新手</span></div>
-      </a>
-      <a href="lab-article.html" class="tool-card">
-        <span class="tag cat-web3" style="margin-bottom:10px;">一招</span>
-        <h3>用 ether.fi 卡在 7-11 結帳</h3>
-        <p>加密支付實測，刷起來跟悠遊卡一樣。</p>
-        <div class="news-meta"><span>8 分鐘</span> · <span>新手</span></div>
-      </a>
-      <a href="lab-article.html" class="tool-card">
-        <span class="tag cat-local" style="margin-bottom:10px;">一詞</span>
-        <h3>穩定幣 Stablecoin 是什麼</h3>
-        <p>3 句話講完，立刻看懂加密支付背後的錢。</p>
-        <div class="news-meta"><span>5 分鐘</span> · <span>新手</span></div>
-      </a>
-      <a href="news-article.html" class="tool-card">
-        <span class="tag cat-policy" style="margin-bottom:10px;">政策</span>
-        <h3>金管會研擬虛擬資產法草案</h3>
-        <p>預期 Q3 送立法院。台灣 Web3 圈分水嶺：合規門檻拉高，長期更接近主流金融。</p>
-        <div class="news-meta"><span>4 分鐘</span> · <span>2026.05.15</span></div>
+      <a href="lab-article.html" class="news-headline">
+        <div class="news-headline-visual cat-tool" style="aspect-ratio: 21/9;"><span class="glyph">USDC</span></div>
+        <div class="news-headline-body">
+          <div style="display:flex; gap:8px; margin-bottom:10px;">
+            <span class="tag cat-local">一詞</span>
+            <span class="tag cat-web3">金融術語</span>
+          </div>
+          <h3>穩定幣 Stablecoin 是什麼</h3>
+          <p>3 句話講完穩定幣，配 Prompt 給 Claude 幫你規劃實際用法。</p>
+          <div class="news-meta"><span>2026.05.11 · 週一</span> · <span>5 分鐘</span> · <span class="tag cat-local">新手</span></div>
+        </div>
       </a>
     </div>
   </section>
 
-  <section style="margin-top: 32px;">
-    <div style="background:var(--cat-web3-bg); color:var(--cat-web3-text); border-radius:var(--radius-xl); padding:48px 40px; text-align:center;">
-      <h2 style="font-size:28px; font-weight:500; margin-bottom:12px;">每週五、六 Web3 專欄寄到信箱</h2>
-      <p style="font-size:15px; opacity:0.85; margin-bottom:24px;">訂閱 Cadence，AI + Web3 兩條軸線同步跟上。</p>
-      <a href="subscribe.html" class="btn-dark" style="background:var(--cat-web3-text); color:var(--cat-web3-bg); padding:14px 28px;">訂閱 Newsletter</a>
+  <section>
+    <div class="section-header"><div><p class="kicker">所有招式 · 依時間排序</p><h2>招式庫</h2></div><span class="see-more">時間排序 ↓</span></div>
+    <div class="tools-grid">
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-tool" style="margin-bottom:10px;">生產力</span>
+        <h3>用 Claude 30 秒寫完週報</h3>
+        <p>上班族必學，省下每週 30 分鐘。</p>
+        <div class="news-meta"><span>2026.05.13 · 新手</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-llm" style="margin-bottom:10px;">研究</span>
+        <h3>用 Perplexity 做 30 分鐘產業研究</h3>
+        <p>戒掉 Google 翻 20 個分頁的舊習慣。</p>
+        <div class="news-meta"><span>2026.05.14 · 中階</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-web3" style="margin-bottom:10px;">Web3</span>
+        <h3>30 分鐘開好你的第一個加密錢包</h3>
+        <p>Phantom 錢包新手入門，含助記詞安全須知。</p>
+        <div class="news-meta"><span>2026.05.15 · 新手</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-web3" style="margin-bottom:10px;">Web3</span>
+        <h3>用 ether.fi 卡在 7-11 結帳</h3>
+        <p>加密支付實測，刷起來跟悠遊卡一樣。</p>
+        <div class="news-meta"><span>2026.05.16 · 新手</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-viral" style="margin-bottom:10px;">AI 玩法</span>
+        <h3>用 Nano Banana 假裝在棒球場 cam 被拍到</h3>
+        <p>本週爆紅 viral trend，5 分鐘做出一張。</p>
+        <div class="news-meta"><span>2026.05.17 · 新手</span></div>
+      </a>
+      <a href="lab-article.html" class="tool-card">
+        <span class="tag cat-tool" style="margin-bottom:10px;">AI Coding</span>
+        <h3>用 Cursor 自動寫一份簡單的 landing page</h3>
+        <p>不會寫程式也能做，從 0 到上線 1 小時。</p>
+        <div class="news-meta"><span>2026.05.10 · 中階</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section style="text-align:center; padding: 24px 0 48px;"><button class="btn-secondary">載入更多招式</button></section>
+
+  <section>
+    <div class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2>每晚 8 點，新招到信箱</h2>
+        <p>免費訂閱，每招都附現成 Prompt 跟一鍵開工具。</p>
+        <form class="hero-form" onsubmit="return handleSubscribe(this)">
+          <input type="email" name="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn-primary">訂閱</button>
+        </form>
+      </div>
     </div>
   </section>
 
