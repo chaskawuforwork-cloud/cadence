@@ -1,1 +1,184 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>工具庫 · Cadence 節拍</title><link rel="stylesheet" href="cadence.css"><link rel="icon" type="image/svg+xml" href="favicon.svg"></head><body><nav class="site-nav"><div class="nav-inner"><a href="index.html" class="logo"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></a><div class="nav-links"><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="tools.html">工具庫</a><a href="weekly.html">週報</a><a href="web3.html">Web3</a></div><div class="nav-actions"><button class="btn-icon" onclick="toggleLang()">繁/EN</button><button class="btn-icon" onclick="toggleTheme()">◐</button><a href="subscribe.html" class="btn-primary small">免費訂閱</a></div></div></nav><main class="container-narrow"><section class="hero"><div class="hero-inner"><span class="hero-eyebrow">Cadence · 即將推出</span><h1>工具庫</h1><p class="hero-subtitle">找最適合你的 AI 與 Web3 工具。完整版正在準備中。</p><div style="margin-top:24px;"><a href="index.html" class="btn-primary">回首頁</a><a href="subscribe.html" class="btn-secondary" style="margin-left:8px;">訂閱以收到更新</a></div></div></section></main><footer><div class="footer-inner"><div class="footer-col"><div class="logo" style="margin-bottom: 12px;"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></div><p class="brand-text">繁體中文 AI 媒體。看完就動手做的每日內容平台。Made with rhythm in Taipei.</p></div><div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div><div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡編輯部</a></div><div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">RSS</a></div></div><div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源</div></footer><script src="cadence.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工具庫 · Cadence 節拍</title>
+<link rel="stylesheet" href="cadence.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-bars"><span></span><span></span><span></span></span>
+      <span class="logo-text">Cadence<small>節 拍</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="news.html">早報</a>
+      <a href="lab.html">AI 實驗室</a>
+      <a href="tools.html" class="active">工具庫</a>
+      <a href="weekly.html">週報</a>
+      <a href="web3.html">Web3</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-icon" onclick="toggleLang()">繁/EN</button>
+      <button class="btn-icon" onclick="toggleTheme()">◐</button>
+      <a href="subscribe.html" class="btn-primary small">免費訂閱</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" style="padding-bottom: 32px;">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">AI + Web3 工具庫 · 編輯實測</span>
+    <h1 style="font-size: 44px;">找最適合你的工具</h1>
+    <p class="hero-subtitle">每個工具都經過編輯實測，從繁中支援、免費方案、學習門檻、適合情境、Web3 整合五個維度評分。</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <section style="padding-top: 16px;">
+    <div style="background:var(--surface); border:0.5px solid var(--border); border-radius:var(--radius-lg); padding:24px; margin-bottom:32px;">
+      <p style="font-size:13px; color:var(--text-2); margin-bottom:12px;">告訴我們你想做什麼，我們推薦工具組合：</p>
+      <form style="display:flex; gap:8px;">
+        <input type="text" class="form-input" placeholder="例如：我想學寫程式 / 我想做短影音 / 我想開始用加密貨幣..." style="flex:1;">
+        <button type="submit" class="btn-primary">推薦工具 →</button>
+      </form>
+    </div>
+
+    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:32px; justify-content:center;">
+      <button class="btn-secondary small" style="border-color: var(--accent); color: var(--accent);">全部</button>
+      <button class="btn-secondary small">通用 LLM</button>
+      <button class="btn-secondary small">圖像生成</button>
+      <button class="btn-secondary small">影片生成</button>
+      <button class="btn-secondary small">Coding</button>
+      <button class="btn-secondary small">研究</button>
+      <button class="btn-secondary small">Web3 錢包</button>
+      <button class="btn-secondary small">DeFi</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><div><p class="kicker">編輯精選 · 5 星</p><h2>頂級必用</h2></div></div>
+    <div class="tools-grid">
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-llm-bg); color:var(--cat-llm-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">G</div>
+        <h3>Gemini</h3>
+        <p>Google 多模態 AI，圖像能力 Nano Banana 系列極強</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="label">5/5</span></div>
+        <div class="news-meta"><span class="tag cat-llm">通用 LLM</span> · <span>免費</span></div>
+      </a>
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-tool-bg); color:var(--cat-tool-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">C</div>
+        <h3>Claude</h3>
+        <p>寫作與推理深度最強，台灣團隊愛用</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="label">4/5</span></div>
+        <div class="news-meta"><span class="tag cat-llm">通用 LLM</span> · <span>免費 + Pro</span></div>
+      </a>
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-industry-bg); color:var(--cat-industry-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">⌬</div>
+        <h3>ChatGPT</h3>
+        <p>OpenAI 旗艦 LLM，生態最完整，Plus 版含 GPT-6</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="label">4/5</span></div>
+        <div class="news-meta"><span class="tag cat-llm">通用 LLM</span> · <span>$20/月</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><div><p class="kicker">研究與生產力</p><h2>工作神器</h2></div></div>
+    <div class="tools-grid">
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-hw-bg); color:var(--cat-hw-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">P</div>
+        <h3>Perplexity</h3>
+        <p>AI 搜尋與研究，附來源連結，戒掉 Google 翻 20 頁</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="dot empty"></span><span class="label">3/5</span></div>
+        <div class="news-meta"><span class="tag cat-tool">研究</span> · <span>免費 + Pro</span></div>
+      </a>
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-policy-bg); color:var(--cat-policy-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">⌃</div>
+        <h3>Cursor</h3>
+        <p>AI 原生 IDE，台灣工程師滲透率超過 40%</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="dot empty"></span><span class="label">3/5</span></div>
+        <div class="news-meta"><span class="tag cat-tool">Coding</span> · <span>$20/月</span></div>
+      </a>
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-viral-bg); color:var(--cat-viral-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">M</div>
+        <h3>Midjourney</h3>
+        <p>頂級 AI 圖像生成，藝術質感最強，需 Discord</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="dot empty"></span><span class="label">3/5</span></div>
+        <div class="news-meta"><span class="tag cat-viral">圖像</span> · <span>$10/月起</span></div>
+      </a>
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-llm-bg); color:var(--cat-llm-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">R</div>
+        <h3>Runway</h3>
+        <p>AI 影片生成，Gen-5 主打 10 秒 4K</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="dot empty"></span><span class="label">3/5</span></div>
+        <div class="news-meta"><span class="tag cat-llm">影片</span> · <span>免費 + Pro</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header"><div><p class="kicker">Web3 入門必備</p><h2>加密世界工具</h2></div></div>
+    <div class="tools-grid">
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-web3-bg); color:var(--cat-web3-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">P</div>
+        <span class="tag cat-web3" style="margin-bottom:6px;">Web3</span>
+        <h3>Phantom</h3>
+        <p>Solana 鏈最易用的新手錢包</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="label">4/5</span></div>
+        <div class="news-meta"><span class="tag cat-web3">錢包</span> · <span>免費</span></div>
+      </a>
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-web3-bg); color:var(--cat-web3-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">e</div>
+        <span class="tag cat-web3" style="margin-bottom:6px;">Web3</span>
+        <h3>ether.fi</h3>
+        <p>DeFi 流動性質押 + 加密支付卡（編輯部實測）</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="dot empty"></span><span class="label">3/5</span></div>
+        <div class="news-meta"><span class="tag cat-web3">DeFi</span> · <span>免費</span></div>
+      </a>
+      <a href="#" class="tool-card">
+        <div style="width:42px; height:42px; border-radius:10px; background:var(--cat-web3-bg); color:var(--cat-web3-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); font-size:18px; margin-bottom: 12px;">R</div>
+        <span class="tag cat-web3" style="margin-bottom:6px;">Web3</span>
+        <h3>Rabby</h3>
+        <p>EVM 鏈通用錢包，多鏈管理友善</p>
+        <div class="tool-rating"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot empty"></span><span class="dot empty"></span><span class="label">3/5</span></div>
+        <div class="news-meta"><span class="tag cat-web3">錢包</span> · <span>免費</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2>新工具來了，第一時間告訴你</h2>
+        <p>訂閱 Cadence，每週至少一個編輯實測的新工具評比。</p>
+        <form class="hero-form" onsubmit="return handleSubscribe(this)">
+          <input type="email" name="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn-primary">訂閱</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom: 12px;"><span class="logo-bars"><span></span><span></span><span></span></span><span class="logo-text">Cadence<small>節 拍</small></span></div>
+      <p class="brand-text">繁體中文 AI 媒體。看完就動手做的每日內容平台。</p>
+    </div>
+    <div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div>
+    <div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡</a></div>
+    <div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">RSS</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源</div>
+</footer>
+<script src="cadence.js"></script>
+</body>
+</html>
