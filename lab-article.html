@@ -4,8 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>用 Gemini 把自己做成漫畫風頭像 · AI 實驗室 · Cadence</title>
+<meta name="description" content="3 分鐘把自拍變成《灌籃高手》風頭像。本週 X 上最紅的 AI 玩法，內附 ready-to-use prompt，點一下複製、點一下開 Gemini。">
+
+<link rel="canonical" href="https://chaskawuforwork-cloud.github.io/cadence/lab-article.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cadence 節拍">
+<meta property="og:title" content="用 Gemini 把自己做成漫畫風頭像">
+<meta property="og:description" content="3 分鐘把自拍變成《灌籃高手》風頭像。本週 X 上最紅的 AI 玩法，內附 ready-to-use prompt。">
+<meta property="og:url" content="https://chaskawuforwork-cloud.github.io/cadence/lab-article.html">
+<meta property="og:image" content="https://chaskawuforwork-cloud.github.io/cadence/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="用 Gemini 把自己做成漫畫風頭像">
+<meta name="twitter:description" content="3 分鐘把自拍變成《灌籃高手》風頭像。本週 X 上最紅的 AI 玩法。">
+<meta name="twitter:image" content="https://chaskawuforwork-cloud.github.io/cadence/og-image.svg">
+
+<link rel="alternate" type="application/rss+xml" title="Cadence 節拍 — AI 早報 RSS" href="https://chaskawuforwork-cloud.github.io/cadence/rss.xml">
+
 <link rel="stylesheet" href="cadence.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4RLD1FF8ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4RLD1FF8ND', { anonymize_ip: true, cookie_flags: 'SameSite=None;Secure' });
+</script>
 </head>
 <body>
 
@@ -49,54 +79,33 @@
       </div>
     </div>
 
-    <div class="news-headline-visual cat-web3" style="aspect-ratio: 16/9; border-radius: var(--radius-lg); margin-bottom: 32px; position: relative;">
-      <span class="glyph" style="font-size: 120px;">漫畫</span>
-      <div style="position: absolute; bottom: 16px; left: 16px; background: rgba(0,0,0,0.5); color: #fff; padding: 6px 14px; border-radius: 100px; font-size: 11px; letter-spacing: 1px;">示意圖 · 編輯部實測</div>
+    <div class="news-headline-visual cat-web3" style="aspect-ratio: 16/9; border-radius: var(--radius-lg); margin-bottom: 40px;">
+      <span class="glyph" style="font-size: 96px;">漫畫</span>
     </div>
 
     <div class="article-body">
-      <p style="font-size: 19px; line-height: 1.7;"><strong>為什麼今天教這招</strong>：本週 X 上最紅的 AI 玩法，分享率比新聞高 10 倍。3 分鐘做出一張《灌籃高手》風的自己，當大頭照、當朋友圈分享都很吃。</p>
-    </div>
+      <p><strong>為什麼今天教這招</strong>：本週 X 上最紅的 AI 玩法，分享率比新聞高 10 倍。3 分鐘做出一張《灌籃高手》風的自己，當大頭照、當朋友圈分享都很吃。</p>
 
-    <!-- 3 步驟視覺化 -->
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 40px 0 32px;">
-      <div style="background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 20px; position: relative;">
-        <div style="position: absolute; top: -14px; left: 20px; background: var(--cat-llm-bg); color: var(--cat-llm-text); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500; font-family: var(--font-mono); font-size: 15px;">1</div>
-        <p style="font-size: 11px; color: var(--text-3); letter-spacing: 1px; margin: 8px 0 6px; text-transform: uppercase;">STEP 1</p>
-        <p style="font-size: 14px; font-weight: 500; line-height: 1.4;">開 Gemini 登入 Google 帳號</p>
-      </div>
-      <div style="background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 20px; position: relative;">
-        <div style="position: absolute; top: -14px; left: 20px; background: var(--cat-tool-bg); color: var(--cat-tool-text); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500; font-family: var(--font-mono); font-size: 15px;">2</div>
-        <p style="font-size: 11px; color: var(--text-3); letter-spacing: 1px; margin: 8px 0 6px; text-transform: uppercase;">STEP 2</p>
-        <p style="font-size: 14px; font-weight: 500; line-height: 1.4;">上傳一張清晰正臉照</p>
-      </div>
-      <div style="background: var(--surface); border: 2px solid var(--accent); border-radius: var(--radius-lg); padding: 20px; position: relative;">
-        <div style="position: absolute; top: -14px; left: 20px; background: var(--accent); color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500; font-family: var(--font-mono); font-size: 15px;">3</div>
-        <p style="font-size: 11px; color: var(--accent-dark); letter-spacing: 1px; margin: 8px 0 6px; text-transform: uppercase; font-weight: 500;">STEP 3</p>
-        <p style="font-size: 14px; font-weight: 500; line-height: 1.4;">貼 Prompt 按送出 → 完成</p>
-      </div>
-    </div>
+      <h2>3 個步驟</h2>
+      <ol>
+        <li>開 <a href="https://gemini.google.com" target="_blank">gemini.google.com</a> 登入 Google 帳號</li>
+        <li>上傳一張你的清晰正臉照（光線越好成品越好）</li>
+        <li>貼上下方 Prompt，按下送出，等 5–10 秒</li>
+      </ol>
 
-    <!-- 加強版 Prompt 卡片 -->
-    <div style="background: var(--surface); border: 2px solid var(--accent); border-radius: var(--radius-lg); padding: 32px; margin: 24px 0 32px; position: relative; overflow: hidden;">
-      <div style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; background: radial-gradient(circle, var(--accent-bg), transparent 70%); transform: translate(50%, -50%); pointer-events: none;"></div>
-      <div style="position: relative; z-index: 1;">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
-          <div>
-            <p style="font-size: 11px; color: var(--accent-dark); letter-spacing: 2px; font-weight: 500; margin-bottom: 4px;">⌘ READY-TO-USE PROMPT</p>
-            <h3 style="font-size: 18px; font-weight: 500;">複製這段，貼到 Gemini 就能用</h3>
-          </div>
-          <button class="copy-btn" onclick="copyPrompt(this, '#prompt-text')" style="font-size: 14px; padding: 12px 20px;">📋 複製</button>
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <span class="prompt-label">PROMPT · 點一下複製</span>
+          <button class="copy-btn" onclick="copyPrompt(this, '#prompt-text')">複製</button>
         </div>
-        <div style="background: var(--surface-2); border-radius: var(--radius-md); padding: 20px 24px; font-family: var(--font-mono); font-size: 13.5px; line-height: 1.8; white-space: pre-wrap; border-left: 3px solid var(--accent);" id="prompt-text">將這張照片改成 1990 年代日本少年漫畫風格：黑白網點、誇張的線條對比、強烈動態速度線、主角五官保留清晰特徵、背景加入漫畫常見的爆炸狀效果線。整體質感要像剛從週刊少年 JUMP 撕下來的一頁。</div>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
-          <a href="https://gemini.google.com" target="_blank" class="btn-primary large" style="font-size: 16px; padding: 14px 28px;">↗ 開啟 Gemini 動手</a>
-          <button class="btn-secondary" onclick="toggleBookmark(this)">⭐ 收藏這招</button>
-        </div>
+        <div class="prompt-text" id="prompt-text">將這張照片改成 1990 年代日本少年漫畫風格：黑白網點、誇張的線條對比、強烈動態速度線、主角五官保留清晰特徵、背景加入漫畫常見的爆炸狀效果線。整體質感要像剛從週刊少年 JUMP 撕下來的一頁。</div>
       </div>
-    </div>
 
-    <div class="article-body">
+      <div class="lab-actions" style="margin: 16px 0 40px;">
+        <a href="https://gemini.google.com" target="_blank" class="btn-primary">↗ 開啟 Gemini 動手</a>
+        <button class="btn-secondary" onclick="toggleBookmark(this)">收藏這招</button>
+      </div>
+
       <h2>失敗時怎麼辦</h2>
       <p>如果生出來太像油畫不像漫畫，在 prompt 結尾加一句「<strong>不要寫實風格，要明確的網點與線稿</strong>」。如果五官不像，加「<strong>忠實保留原照片臉部比例與表情</strong>」。如果背景太亂，加「<strong>背景簡化，主角突出</strong>」。</p>
 
@@ -110,8 +119,8 @@
     </div>
   </article>
 
-  <section style="margin-top: 56px; padding-top: 40px; border-top: 0.5px solid var(--border);">
-    <h3 style="font-size:18px; font-weight:500; margin-bottom:20px;">這招用到的工具</h3>
+  <section style="margin-top: 64px; padding-top: 40px; border-top: 0.5px solid var(--border);">
+    <h3 style="font-size:18px; font-weight:500; margin-bottom:20px;">相關工具</h3>
     <div class="tools-grid">
       <a href="tools.html" class="tool-card">
         <div style="width:36px; height:36px; border-radius:8px; background:var(--cat-llm-bg); color:var(--cat-llm-text); display:flex; align-items:center; justify-content:center; font-weight:500; font-family:var(--font-mono); margin-bottom: 10px;">G</div>
