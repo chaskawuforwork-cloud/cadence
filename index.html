@@ -4,11 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cadence 節拍 — 每天 5 分鐘，跟上 AI 的節拍</title>
-<meta name="description" content="繁體中文 AI 媒體。早上一份早報、晚上教你一招，看完就動手做。">
+<meta name="description" content="繁體中文 AI 媒體。早上一份早報、晚上教你一招，看完就動手做。AI 為主軸，Web3 為副軸線。">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://chaskawuforwork-cloud.github.io/cadence/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cadence 節拍">
+<meta property="og:title" content="Cadence 節拍 — 每天 5 分鐘，跟上 AI 的節拍">
+<meta property="og:description" content="繁體中文 AI 媒體。早上一份早報、晚上教你一招，看完就動手做。AI 為主軸，Web3 為副軸線。">
+<meta property="og:url" content="https://chaskawuforwork-cloud.github.io/cadence/">
+<meta property="og:image" content="https://chaskawuforwork-cloud.github.io/cadence/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cadence 節拍 — 每天 5 分鐘，跟上 AI 的節拍">
+<meta name="twitter:description" content="繁體中文 AI 媒體。早上一份早報、晚上教你一招，看完就動手做。">
+<meta name="twitter:image" content="https://chaskawuforwork-cloud.github.io/cadence/og-image.svg">
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="Cadence 節拍 — AI 早報 RSS" href="https://chaskawuforwork-cloud.github.io/cadence/rss.xml">
+
 <link rel="stylesheet" href="cadence.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- Google Analytics 4 · 取得 Measurement ID 後把 G-XXXXXXXXXX 換掉 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    anonymize_ip: true,
+    cookie_flags: 'SameSite=None;Secure'
+  });
+</script>
 </head>
 <body>
+
 <nav class="site-nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">
@@ -24,12 +61,13 @@
     </div>
     <div class="nav-actions">
       <button class="btn-icon" onclick="toggleLang()">繁/EN</button>
-      <button class="btn-icon" onclick="toggleTheme()">◐</button>
+      <button class="btn-icon" onclick="toggleTheme()" aria-label="切換深淺色">◐</button>
       <a href="subscribe.html" class="btn-primary small">免費訂閱</a>
     </div>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
     <span class="hero-eyebrow">繁體中文 AI 媒體 · 每天早上 8 點</span>
@@ -43,24 +81,12 @@
       <span class="dots"><span></span><span></span><span></span></span>
       已有 2,847 位讀者一起跟上節拍
     </p>
-    <div class="weekly-stats" style="margin-top: 32px;">
-      <div class="weekly-stat">
-        <span class="weekly-stat-num">5</span>
-        <p class="weekly-stat-label">則 / 每日早報</p>
-      </div>
-      <div class="weekly-stat">
-        <span class="weekly-stat-num">30+</span>
-        <p class="weekly-stat-label">監控來源</p>
-      </div>
-      <div class="weekly-stat">
-        <span class="weekly-stat-num">7</span>
-        <p class="weekly-stat-label">天 / 週節奏</p>
-      </div>
-    </div>
   </div>
 </section>
 
 <main class="container">
+
+  <!-- 今日早報 -->
   <section>
     <div class="section-header">
       <div>
@@ -69,22 +95,26 @@
       </div>
       <a href="news.html" class="see-more">看完整列表 →</a>
     </div>
+
     <div class="grid-brief">
       <a href="news-article.html" class="news-headline">
-        <div class="news-headline-visual">
+        <div class="news-headline-visual cat-llm">
           <span class="glyph">GPT-6</span>
         </div>
         <div class="news-headline-body">
           <span class="tag cat-headline">頭條</span>
           <h3>蘋果 WWDC 預熱：iOS 19 將深度整合 GPT-6</h3>
-          <p>Tim Cook 在投資人會議上點名 OpenAI 為「主要合作夥伴」，預期 6 月 WWDC 公布 iPhone 系統層級 AI 助理介面。對台灣讀者意義重大——Siri 中文能力可能首次接近 ChatGPT 水準。</p>
+          <p>Tim Cook 在投資人會議上點名 OpenAI 為「主要合作夥伴」，預期 6 月 WWDC 公布 iPhone 系統層級 AI 助理介面。對台灣讀者意義重大——Siri 中文能力可能首次接近 ChatGPT 水準，重塑日常使用習慣。</p>
           <div class="news-meta">
-            <span>3 分鐘閱讀</span><span>·</span>
-            <span class="tag cat-llm">LLM</span><span>·</span>
+            <span>3 分鐘閱讀</span>
+            <span>·</span>
+            <span class="tag cat-llm">LLM</span>
+            <span>·</span>
             <span class="source">The Information</span>
           </div>
         </div>
       </a>
+
       <div class="grid-news-list">
         <a href="news-article.html" class="news-card-small">
           <h4>Cursor 估值衝到 200 億美元，AI Coding 賽道全面起飛</h4>
@@ -110,6 +140,7 @@
     </div>
   </section>
 
+  <!-- 今晚教你一招 -->
   <section>
     <div class="section-header">
       <div>
@@ -118,11 +149,13 @@
       </div>
       <a href="lab.html" class="see-more">來學新招 →</a>
     </div>
+
     <div class="lab-card">
       <div class="lab-card-inner">
         <span class="tag cat-viral">本週爆紅 · AI 玩法</span>
         <h3 style="margin-top:12px;">用 Gemini 把自己做成漫畫風頭像</h3>
         <p class="lab-intro">本週 X 上最紅的 AI 玩法，分享率比新聞高 10 倍。3 分鐘做出一張《灌籃高手》風的自己。我們幫你把 Prompt 寫好，點一下複製、再點一下開 Gemini，貼上去就行。</p>
+
         <div class="prompt-card">
           <div class="prompt-header">
             <span class="prompt-label">PROMPT · 點一下複製</span>
@@ -130,6 +163,7 @@
           </div>
           <div class="prompt-text" id="prompt-text-home">將這張照片改成 1990 年代日本少年漫畫風格：黑白網點、誇張的線條對比、強烈動態速度線、主角五官保留清晰特徵、背景加入漫畫常見的爆炸狀效果線。整體質感要像剛從週刊少年 JUMP 撕下來的一頁。</div>
         </div>
+
         <div class="lab-actions">
           <a href="https://gemini.google.com" target="_blank" rel="noopener" class="btn-primary">↗ 開啟 Gemini 動手</a>
           <a href="lab-article.html" class="btn-secondary">看完整教學</a>
@@ -139,6 +173,7 @@
     </div>
   </section>
 
+  <!-- 本週脈動 + Web3 -->
   <section>
     <div class="section-header">
       <div>
@@ -158,6 +193,7 @@
           <a href="weekly.html" class="see-more" style="font-size:13px; color:var(--accent);">看完整週報 →</a>
         </div>
       </div>
+
       <div class="pulse-card">
         <h3>Web3 專欄 <span class="tag cat-web3" style="margin-left:8px;">每週 2 篇</span></h3>
         <div style="font-size:14px; font-weight:500; padding:12px 0; border-bottom: 0.5px dashed var(--border);">
@@ -175,6 +211,7 @@
     </div>
   </section>
 
+  <!-- Featured Tools Row (NEW) -->
   <section>
     <div class="section-header">
       <div>
@@ -184,13 +221,30 @@
       <a href="tools.html" class="see-more">逛工具庫 →</a>
     </div>
     <div class="featured-tools-row">
-      <a href="tools.html" class="featured-tool"><div class="icon">G</div><p class="name">Gemini</p><p class="label">圖像生成 · 免費</p></a>
-      <a href="tools.html" class="featured-tool"><div class="icon">C</div><p class="name">Claude</p><p class="label">寫作 · 推理</p></a>
-      <a href="tools.html" class="featured-tool"><div class="icon">P</div><p class="name">Perplexity</p><p class="label">研究 · 搜尋</p></a>
-      <a href="tools.html" class="featured-tool"><div class="icon">⌃</div><p class="name">Cursor</p><p class="label">AI Coding</p></a>
+      <a href="tools.html" class="featured-tool">
+        <div class="icon">G</div>
+        <p class="name">Gemini</p>
+        <p class="label">圖像生成 · 免費</p>
+      </a>
+      <a href="tools.html" class="featured-tool">
+        <div class="icon">C</div>
+        <p class="name">Claude</p>
+        <p class="label">寫作 · 推理</p>
+      </a>
+      <a href="tools.html" class="featured-tool">
+        <div class="icon">P</div>
+        <p class="name">Perplexity</p>
+        <p class="label">研究 · 搜尋</p>
+      </a>
+      <a href="tools.html" class="featured-tool">
+        <div class="icon">⌃</div>
+        <p class="name">Cursor</p>
+        <p class="label">AI Coding</p>
+      </a>
     </div>
   </section>
 
+  <!-- CTA Banner -->
   <section>
     <div class="cta-banner">
       <div class="cta-banner-inner">
@@ -203,6 +257,7 @@
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
@@ -214,12 +269,36 @@
       </div>
       <p class="brand-text">繁體中文 AI 媒體。<br>看完就動手做的每日內容平台。<br>Made with rhythm in Taipei.</p>
     </div>
-    <div class="footer-col"><h4>內容</h4><a href="news.html">早報</a><a href="lab.html">AI 實驗室</a><a href="weekly.html">週報</a><a href="web3.html">Web3 專欄</a><a href="tools.html">工具庫</a></div>
-    <div class="footer-col"><h4>關於</h4><a href="about.html">關於我們</a><a href="subscribe.html">訂閱方案</a><a href="mailto:hi@cadence.tw">聯絡編輯部</a><a href="mailto:biz@cadence.tw">商業合作</a></div>
-    <div class="footer-col"><h4>追蹤</h4><a href="#">X / Twitter</a><a href="#">Threads</a><a href="#">Instagram</a><a href="#">RSS</a></div>
+    <div class="footer-col">
+      <h4>內容</h4>
+      <a href="news.html">早報</a>
+      <a href="lab.html">AI 實驗室</a>
+      <a href="weekly.html">週報</a>
+      <a href="web3.html">Web3 專欄</a>
+      <a href="tools.html">工具庫</a>
+    </div>
+    <div class="footer-col">
+      <h4>關於</h4>
+      <a href="about.html">關於我們</a>
+      <a href="subscribe.html">訂閱方案</a>
+      <a href="mailto:hi@cadence.tw">聯絡編輯部</a>
+      <a href="mailto:biz@cadence.tw">商業合作</a>
+      <a href="mailto:tips@cadence.tw">新聞線索</a>
+    </div>
+    <div class="footer-col">
+      <h4>追蹤</h4>
+      <a href="#">X / Twitter</a>
+      <a href="#">Threads</a>
+      <a href="#">Instagram</a>
+      <a href="#">RSS</a>
+      <a href="#">隱私權政策</a>
+    </div>
   </div>
-  <div class="footer-bottom">© 2026 Cadence 節拍 · 內容均嚴格標明原始來源 · 著作權歸原媒體所有</div>
+  <div class="footer-bottom">
+    © 2026 Cadence 節拍 · 內容均嚴格標明原始來源 · 著作權歸原媒體所有
+  </div>
 </footer>
+
 <script src="cadence.js"></script>
 </body>
 </html>
