@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cadence 節拍 — AI 早報</title>
+    <link>https://chaskawuforwork-cloud.github.io/cadence/</link>
+    <description>每天 5 分鐘掌握 AI 與 Web3。台灣首個結合 AI 早報、實戰教學、Web3 入門的中文媒體。</description>
+    <language>zh-TW</language>
+    <copyright>© 2026 Cadence 節拍</copyright>
+    <managingEditor>chaskawuforwork@gmail.com (Cadence 編輯部)</managingEditor>
+    <webMaster>chaskawuforwork@gmail.com (Cadence 技術)</webMaster>
+    <pubDate>Sat, 16 May 2026 06:00:00 +0800</pubDate>
+    <lastBuildDate>Sat, 16 May 2026 06:00:00 +0800</lastBuildDate>
+    <category>AI</category>
+    <category>Web3</category>
+    <category>Technology</category>
+    <generator>Cadence Custom Generator v1</generator>
+    <ttl>60</ttl>
+    <atom:link href="https://chaskawuforwork-cloud.github.io/cadence/rss.xml" rel="self" type="application/rss+xml" />
+
+    <image>
+      <url>https://chaskawuforwork-cloud.github.io/cadence/favicon.svg</url>
+      <title>Cadence 節拍</title>
+      <link>https://chaskawuforwork-cloud.github.io/cadence/</link>
+    </image>
+
+    <!-- 範例 item · 真實內容上線後由 RSS generator 自動產出 -->
+    <item>
+      <title>Cadence 節拍 · 正式上線</title>
+      <link>https://chaskawuforwork-cloud.github.io/cadence/</link>
+      <guid isPermaLink="true">https://chaskawuforwork-cloud.github.io/cadence/</guid>
+      <pubDate>Sat, 16 May 2026 06:00:00 +0800</pubDate>
+      <category>公告</category>
+      <description><![CDATA[
+        台灣首個結合 AI 早報、實戰教學、Web3 入門的中文媒體正式啟動。每天 5 分鐘，跟上節奏。
+      ]]></description>
+    </item>
+
+  </channel>
+</rss>
