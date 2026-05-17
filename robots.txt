@@ -1,0 +1,13 @@
+# Cadence 節拍 — robots.txt
+# 允許所有搜尋引擎索引
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://chaskawuforwork-cloud.github.io/cadence/sitemap.xml
+
+# 禁止索引草稿/未發布內容（未來預留）
+Disallow: /drafts/
+Disallow: /admin/
+Disallow: /*.json$
